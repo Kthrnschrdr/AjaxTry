@@ -15,7 +15,7 @@
 development:
   adapter: postgresql
   encoding: unicode
-  database: AjaxTry_development
+  database: ajaxtry_development
   pool: 5
 
 
@@ -40,12 +40,12 @@ development:
 test:
   adapter: postgresql
   encoding: unicode
-  database: AjaxTry_test
+  database: ajaxtry_test
   pool: 5
 
 production:
   adapter: postgresql
   encoding: unicode
-  database: AjaxTry_production
+  database: ajaxtry_production
   pool: 5
 
