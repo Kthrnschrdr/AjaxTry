@@ -1,10 +1,5 @@
-
 $(document).ready(function(){
   $("a").on("click", function(){
-    $.ajax("/index", {
-		success: function() {
-		  alert("Hiya!");
-  	  	},
-	});
+    $.ajax("/static_pages/show.js";
+  });
 });
-
