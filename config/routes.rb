@@ -2,6 +2,8 @@ AjaxTry::Application.routes.draw do
   get "static_pages/index"
 
   get "static_pages/show"
+  
+  resources :users
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
