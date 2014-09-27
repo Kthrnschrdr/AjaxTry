@@ -4,7 +4,7 @@ class UsersController < ApplicationController
     @users = User.all
     respond_to do |format|
       format.html
-      format.js
+      format.js.erb
     end
   end
   
@@ -14,7 +14,10 @@ class UsersController < ApplicationController
   
   def create
     @user = User.create(params[:user])
-    redirect_to new_user_path
+    respond_to do |format|
+      format.html { redirect_to users_path }
+      format.js.erb
+    end
   end
       
 end
