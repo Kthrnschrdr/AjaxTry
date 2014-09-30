@@ -1,8 +1,14 @@
-<% @users.each do |u| %>
+<%= link_to "New User", new_user_path, id: "new_link", remote: true %>
 
-<%= u.name  %>
+<div id="users"><% @users.each do |u| %>
+
+  <div id = "new_user_<%= u.id %>">
+	<%= u.name  %>
+	<%= link_to "(remove)", u, method: :delete, data: {confirm: "Remove this user?"}, remote: true %>
+  </div>
 
 <% end %>
+</div>
 
 <a href="#">Click me to update without a new request, yo!</a>
 <div id="updated_index"></div>

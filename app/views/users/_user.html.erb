@@ -1,0 +1,2 @@
+<div id = "new_user_<%= @user.id %>"><%= @user.name %>
+<%= link_to "(remove)", @user, method: :delete, data: {confirm: "Remove this user?"}, remote: true %></div>
